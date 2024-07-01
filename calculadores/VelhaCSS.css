@@ -1,0 +1,111 @@
+
+html, body{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#all{
+    width: 95vw;
+    height: 95vh;
+    background-color: lightgreen;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jogo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 450px;
+    height: 450px;
+    
+    
+}
+
+.blocos{
+    width: 150px;
+    height: 150px;
+    border-radius: 7px;
+    
+}
+
+#bloco1{
+    border-bottom: solid black 7px;
+    border-right: solid black 7px;
+    box-sizing: border-box;
+
+}
+
+#bloco2{
+    border-bottom: solid black 7px;
+    border-right: solid black 7px;
+    border-left: solid black 7px;
+    box-sizing: border-box;
+
+}
+
+#bloco3{
+    border-bottom: solid black 7px;
+    border-left: solid black 7px;
+    box-sizing: border-box;
+
+}
+
+#bloco4{
+    border-top: solid black 7px;
+    border-bottom: solid black 7px;
+    border-right: solid black 7px;
+    box-sizing: border-box;
+
+}
+
+#bloco5{
+    border-top: solid black 7px;
+    border-bottom: solid black 7px;
+    border-right: solid black 7px;
+    border-left: solid black 7px;
+    box-sizing: border-box;
+
+}
+
+#bloco6{
+    border-top: solid black 7px;
+    border-bottom: solid black 7px;
+    border-left: solid black 7px;
+    box-sizing: border-box;
+
+}
+
+#bloco7{
+    border-top: solid black 7px;
+    border-right: solid black 7px;
+    box-sizing: border-box;
+
+}
+
+#bloco8{
+    border-top: solid black 7px;
+    border-right: solid black 7px;
+    border-left: solid black 7px;
+    box-sizing: border-box;
+
+}
+
+#bloco9{
+    border-top: solid black 7px;
+    border-left: solid black 7px;
+    box-sizing: border-box;
+
+}
+
