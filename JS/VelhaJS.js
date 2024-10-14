@@ -272,9 +272,79 @@ if(vazio == 0 && vitoriaDada == false){
         console.log("X")
     }
 
-  }setTimeout(temp, 1000)
+  }setTimeout(temp, 2000)
  }
 
+ let lineVictory = {
+
+    x: function(bloco, direction){
+        let line = document.createElement('div');
+        line.className = 'lineX';
+
+        //horizontal: 1
+        //vertical: 2
+        //diagonal para esquerda: 3
+        //diagonal para direita: 4
+
+        switch(direction){
+
+          case 1:
+            line.id = 'HorizontalLine'
+          break;
+
+          case 2:
+            line.id = 'VerticalLine'
+          break;
+
+          case 3:
+            line.id = 'DiagonalLineL';
+          break;
+
+          case 4:
+            line.id = 'DiagonalLineR';
+          break;
+
+        }
+
+        bloco.appendChild(line);
+    },
+
+    bola: function(bloco, direction){ 
+
+      let line = document.createElement('div');
+      line.className = 'lineB';
+
+      //horizontal: 1
+      //vertical: 2
+      //diagonal para esquerda: 3
+      //diagonal para direita: 4
+
+      switch(direction){
+
+        case 1:
+          line.id = 'HorizontalLine'
+        break;
+
+        case 2:
+          line.id = 'VerticalLine'
+        break;
+
+        case 3:
+          line.id = 'DiagonalLineL';
+        break;
+
+        case 4:
+          line.id = 'DiagonalLineR';
+        break;
+
+      }
+
+      bloco.appendChild(line);
+      
+    }
+
+
+  }
 
 
  let ganhou = {
@@ -285,16 +355,19 @@ if(vazio == 0 && vitoriaDada == false){
       if(matriz[0][0] == 1 && matriz[0][1] == 1 && matriz[0][2] == 1){
 
         vitoria(verificardor);
+        lineVictory.x(bloco1, 1)
       }
 
       if(matriz[1][0] == 1 && matriz[1][1] == 1 && matriz[1][2] == 1){
 
         vitoria(verificardor);
+        lineVictory.x(bloco4, 1)
       }
 
       if(matriz[2][0] == 1 && matriz[2][1] == 1 && matriz[2][2] == 1){
 
         vitoria(verificardor);
+        lineVictory.x(bloco7, 1)
       }
 
 
@@ -302,27 +375,32 @@ if(vazio == 0 && vitoriaDada == false){
       if(matriz[0][0] == 1 && matriz[1][0] == 1 && matriz[2][0] == 1){
 
         vitoria(verificardor);
+        lineVictory.x(bloco1, 2)
       }
 
       if(matriz[0][1] == 1 && matriz[1][1] == 1 && matriz[2][1] == 1){
 
         vitoria(verificardor);
+        lineVictory.x(bloco2, 2)
       }
 
       if(matriz[0][2] == 1 && matriz[1][2] == 1 && matriz[2][2] == 1){
 
         vitoria(verificardor);
+        lineVictory.x(bloco3, 2)
       }
 
       //Diagonal
       if(matriz[0][0] == 1 && matriz[1][1] == 1 && matriz[2][2] == 1){
 
         vitoria(verificardor);
+        lineVictory.x(bloco1, 4)
       }
 
       if(matriz[0][2] == 1 && matriz[1][1] == 1 && matriz[2][0] == 1){
 
         vitoria(verificardor);
+        lineVictory.x(bloco7, 3)
       }
 
 
@@ -335,16 +413,19 @@ if(vazio == 0 && vitoriaDada == false){
       if(matriz[0][0] == 2 && matriz[0][1] == 2 && matriz[0][2] == 2){
 
         vitoria(verificardor);
+        lineVictory.bola(bloco1, 1)
       }
 
       if(matriz[1][0] == 2 && matriz[1][1] == 2 && matriz[1][2] == 2){
 
         vitoria(verificardor);
+        lineVictory.bola(bloco4, 1)
       }
 
       if(matriz[2][0] == 2 && matriz[2][1] == 2 && matriz[2][2] == 2){
 
         vitoria(verificardor);
+        lineVictory.bola(bloco7, 1)
       }
 
 
@@ -352,27 +433,32 @@ if(vazio == 0 && vitoriaDada == false){
       if(matriz[0][0] == 2 && matriz[1][0] == 2 && matriz[2][0] == 2){
 
         vitoria(verificardor);
+        lineVictory.bola(bloco1, 2)
       }
 
       if(matriz[0][1] == 2 && matriz[1][1] == 2 && matriz[2][1] == 2){
 
         vitoria(verificardor);
+        lineVictory.bola(bloco2, 2)
       }
 
       if(matriz[0][2] == 2 && matriz[1][2] == 2 && matriz[2][2] == 2){
 
         vitoria(verificardor);
+        lineVictory.bola(bloco3, 2)
       }
 
       //Diagonal
       if(matriz[0][0] == 2 && matriz[1][1] == 2 && matriz[2][2] == 2){
 
         vitoria(verificardor);
+        lineVictory.bola(bloco1, 4)
       }
 
       if(matriz[0][2] == 2 && matriz[1][1] == 2 && matriz[2][0] == 2){
 
         vitoria(verificardor);
+        lineVictory.bola(bloco7, 3)
       }
 
 

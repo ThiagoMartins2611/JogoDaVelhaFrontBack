@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     
 }
 
@@ -138,4 +139,54 @@
     100%{
         transform: scale(1);
     }
+}
+
+
+
+.lineX{
+    width: 450px;
+    height: 7px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 3px;
+    background-color: var(--color-X);
+}
+
+
+.lineB{
+    width: 450px;
+    height: 7px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 3px;
+    background-color: var(--color-circle);
+}
+
+
+
+
+#HorizontalLine{
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+}
+
+#VerticalLine{
+    top: 150%;
+    left: 50%;
+    transform: translate( -50%, -50%) rotateZ(90deg);
+}
+
+#DiagonalLineL{
+    width: 600px;
+    top: -50%;
+    left: 150%;
+    transform: translate( -50%, -50%) rotateZ(135deg);
+}
+
+#DiagonalLineR{
+    width: 600px;
+    top: 150%;
+    left: 150%;
+    transform: translate( -50%, -50%) rotateZ(45deg);
 }

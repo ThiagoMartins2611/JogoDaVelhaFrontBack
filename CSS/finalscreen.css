@@ -1,7 +1,7 @@
 .faixa{
-    width: 100vw;
+    width: 60vw;
     height: 60vh;
-    background-color: lightblue;
+    background-color: var(--color-faixa);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,11 +21,11 @@
 
 
 .restart{
-   background-color: gray;
-   border: solid black 5px;
-
+   background-color: var(--color-fundo);
    margin: 20px;
    
+   transition: 0.3s;
+   border-radius: 10px;
 }
 
 .restart h2{
@@ -37,5 +37,6 @@
 .restart:hover{
     background-color: white;
     cursor: pointer;
+    color: var(--color-fundo);
     
 }
