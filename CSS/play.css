@@ -1,0 +1,141 @@
+#jogo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 450px;
+    height: 450px;
+    
+    
+}
+
+
+.blocos{
+    width: 150px;
+    height: 150px;
+    border-radius: var(--openBorder);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#bloco1{
+    border-bottom: solid var(--color-velhaAreaEletra) var(--size);
+    border-right: solid var(--color-velhaAreaEletra) var(--size);
+}
+
+#bloco2{
+    border-bottom: solid var(--color-velhaAreaEletra) var(--size);
+    border-right: solid var(--color-velhaAreaEletra) var(--size);
+    border-left: solid var(--color-velhaAreaEletra) var(--size);
+
+}
+
+#bloco3{
+    border-bottom: solid var(--color-velhaAreaEletra) var(--size);
+    border-left: solid var(--color-velhaAreaEletra) var(--size);
+
+}
+
+#bloco4{
+    border-top: solid var(--color-velhaAreaEletra) var(--size);
+    border-bottom: solid var(--color-velhaAreaEletra) var(--size);
+    border-right: solid var(--color-velhaAreaEletra) var(--size);
+
+}
+
+#bloco5{
+    border-top: solid var(--color-velhaAreaEletra) var(--size);
+    border-bottom: solid var(--color-velhaAreaEletra) var(--size);
+    border-right: solid var(--color-velhaAreaEletra) var(--size);
+    border-left: solid var(--color-velhaAreaEletra) var(--size);
+
+}
+
+#bloco6{
+    border-top: solid var(--color-velhaAreaEletra) var(--size);
+    border-bottom: solid var(--color-velhaAreaEletra) var(--size);
+    border-left: solid var(--color-velhaAreaEletra) var(--size);
+
+}
+
+#bloco7{
+    border-top: solid var(--color-velhaAreaEletra) var(--size);
+    border-right: solid var(--color-velhaAreaEletra) var(--size);
+
+}
+
+#bloco8{
+    border-top: solid var(--color-velhaAreaEletra) var(--size);
+    border-right: solid var(--color-velhaAreaEletra) var(--size);
+    border-left: solid var(--color-velhaAreaEletra) var(--size);
+
+}
+
+#bloco9{
+    border-top: solid var(--color-velhaAreaEletra) var(--size);
+    border-left: solid var(--color-velhaAreaEletra) var(--size);
+
+}
+
+
+
+#lineLeft{
+    transform: scale(0) rotate(45deg);
+
+    animation: growthL var(--timeAppear) forwards;
+}
+
+#lineRight{
+    position: absolute;
+    transform: scale(0) rotate(135deg);
+
+    animation: growthR var(--timeAppear) forwards;
+}
+
+
+
+@keyframes growthL {
+
+    60%{
+        transform: scale(1.5) rotate(45deg);
+    }
+
+    100%{
+        transform: scale(1) rotate(45deg);
+    }
+}
+
+
+@keyframes growthR {
+
+    60%{
+        transform: scale(1.5) rotate(135deg);
+    }
+
+    100%{
+        transform: scale(1) rotate(135deg);
+    }
+}
+
+
+#Bola{
+    width: 100px;
+    height: 100px;
+    border: solid var(--color-circle) 7px;
+    box-sizing: border-box;
+    border-radius: 100%;
+
+    transform: scale(0);
+
+    animation: growthCircle var(--timeAppear) forwards;
+}
+
+@keyframes growthCircle {
+    60%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}

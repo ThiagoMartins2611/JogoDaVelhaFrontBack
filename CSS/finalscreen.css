@@ -1,0 +1,41 @@
+.faixa{
+    width: 100vw;
+    height: 60vh;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.vencedor{
+    
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.restart{
+   background-color: gray;
+   border: solid black 5px;
+
+   margin: 20px;
+   
+}
+
+.restart h2{
+    border: 0;
+    padding: 0;
+    margin: 3px;
+}
+
+.restart:hover{
+    background-color: white;
+    cursor: pointer;
+    
+}

@@ -1,0 +1,88 @@
+
+#menu{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-faixa);
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.escolhas{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Op{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+
+
+#X{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x-line{
+    height: 7px;
+    background-color: var(--color-X);
+    width: 100px;
+    
+}
+
+
+
+#L{
+    transform: rotate(45deg);
+}
+
+
+#R{
+    transform: rotate(135deg);
+    position: absolute;
+}
+
+
+
+
+
+#bol{
+    width: 70px;
+    height: 70px;
+    border: solid  var(--color-circle) 7px;
+    border-radius: 100%;
+
+}
+
+#XI, #BO{
+    transition: 0.35s;
+}
+
+#XI:hover, #BO:hover{
+    
+    transform: scale(1.2) translateY(-10px);
+    
+    cursor: pointer;
+}
+
+
