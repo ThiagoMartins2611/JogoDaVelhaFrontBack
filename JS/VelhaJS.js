@@ -128,8 +128,8 @@ if(vazio == 0 && vitoriaDada == false){
   
       let faixa = document.createElement('div');
       let texto1 = document.createElement('h1');
-      let restart = document.createElement('div')
-      let restartText = document.createElement('h2')
+      let restart = document.createElement('div');
+      let restartText = document.createElement('h2');
   
       faixa.className = "faixa";
       texto1.innerText = "EMPATE";
@@ -196,7 +196,7 @@ if(vazio == 0 && vitoriaDada == false){
 
       let vencedorBola = document.createElement('div');
       let bol = document.createElement('div');
-      let restart = document.createElement('div')
+      let restart = document.createElement('button')
       let restartText = document.createElement('h2')
 
       

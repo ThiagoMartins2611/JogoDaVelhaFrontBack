@@ -6,8 +6,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
 
+    border-radius: 20px;
 }
+
+.faixa
 
 .vencedor{
     
@@ -16,22 +20,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
+
+}
+
+.faixa h1{
+    font-size: 5vw;
 }
 
 
 .restart{
-   background-color: var(--color-fundo);
+   background-color: var(--color-faixa);
    margin: 20px;
+   box-shadow: 0px 4px 0 var(--color-fundo);
    
    transition: 0.3s;
    border-radius: 10px;
+   color: var(--color-velhaAreaEletra);
+
+   transform: translateY(-4px);
+}
+
+
+
+.restart:active{
+    transform: translateY(0px);
+    box-shadow: 0 0 0;
 }
 
 .restart h2{
     border: 0;
     padding: 0;
-    margin: 3px;
+    margin: 7px;
 }
 
 .restart:hover{
@@ -39,4 +59,38 @@
     cursor: pointer;
     color: var(--color-fundo);
     
+}
+
+
+.faixa #XI{
+    animation: brincX 4s infinite;
+}
+
+@keyframes brincX {
+    20%{
+        transform: rotate(-30deg);
+    }
+
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.faixa #BO{
+    animation: brincB 3s infinite;
+}
+
+@keyframes brincB {
+    20%{
+        transform: scaleY(20%) translateY(100px);
+    }
+
+    50%{
+        transform: scaleY(50%) translateY(100px);
+    }
+
+    70%{
+        transform: scaleY(1) scaleX(30%) translateY(-20px); 
+    }
 }
