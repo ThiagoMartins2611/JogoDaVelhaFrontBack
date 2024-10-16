@@ -78,19 +78,19 @@
 }
 
 .faixa #BO{
-    animation: brincB 3s infinite;
+    animation: brincB 3s ease infinite;
 }
 
 @keyframes brincB {
-    20%{
-        transform: scaleY(20%) translateY(100px);
-    }
 
-    50%{
-        transform: scaleY(50%) translateY(100px);
-    }
+   0%{transform: translateY(40px);}
 
-    70%{
-        transform: scaleY(1) scaleX(30%) translateY(-20px); 
-    }
+   25%{transform: translateY(75px) scaleY(0.5);}
+
+   30%{transform: translateY(55px) scaleX(0.3);}
+
+   50%{transform: translateY(-40px) scaleX(1); }
+   
+   100%{transform: translateY(40px);}
+
 }
