@@ -5,7 +5,9 @@
     height: 450px;
 }
 
-
+.GameOFF{
+    pointer-events: none;
+}
 
 
 .blocos{

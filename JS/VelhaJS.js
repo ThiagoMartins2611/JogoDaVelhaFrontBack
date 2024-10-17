@@ -170,6 +170,7 @@ if(vazio == 0 && vitoriaDada == false){
  function vitoria(verificardor){
   
   vitoriaDada = true;
+  jogo.className = 'GameOFF'
 
   function temp(){
     all.removeChild(jogo);
